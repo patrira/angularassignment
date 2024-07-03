@@ -1,0 +1,30 @@
+
+
+  
+  .listing {
+    background-color: #f9f9f9; /* Optional: add a background color */
+    border: 1px solid #ddd; /* Optional: add a border */
+    border-radius: 8px; /* Optional: add rounded corners */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    padding: 16px; /* Optional: add padding inside each item */
+    text-align: center; /* Center-align text */
+  }
+  
+  .listing_photo {
+    width: 100%; /* Ensure image takes up full width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure image is treated as block element */
+    margin: auto ; /* Center the image and add some margin at the bottom */
+  }
+  
+  .listing_heading {
+    font-size: 10px; /* Adjust font size as needed */
+    margin: 8px 0; /* Add some margin above and below the heading */
+  }
+  
+  .listing_location {
+    font-size: 5px; /* Adjust font size as needed */
+    color: #555; /* Optional: change text color */
+    margin: 0; /* Remove default margin */
+  }
+  

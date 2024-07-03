@@ -1,0 +1,57 @@
+app-housing-location {
+  background-color: #fff; /* Set background color */
+  border: 1px solid #ddd; /* Add a border */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  overflow: hidden; /* Ensure content doesn't overflow */
+  padding: 16px; /* Add padding inside each item */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+app-housing-location:hover {
+  transform: translateY(-5px); /* Slightly lift the card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.grid_container{
+  display: grid;
+  grid-template-columns: repeat(4,  1fr);
+  row-gap: 20px;
+  column-gap: 10px;
+}
+.results{
+  margin-bottom: 20px;
+}
+
+
+input {
+  border: solid 1px blue;
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 4px;
+  display: inline-block;
+  width: 30%;
+}
+
+button {
+  padding: 10px;
+  border: solid 1px blue;
+  background: blue;
+  color: white;
+  border-radius: 8px;
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+  .results {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  input {
+      width: 70%;
+  }   
+}
+
+@media (max-width: 499px) {
+  .results {
+      grid-template-columns: 1fr;
+  }    
+}
